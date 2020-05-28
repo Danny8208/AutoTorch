@@ -4,5 +4,6 @@
   "item.autotorch.current_state1": "Current State: Active",
   "item.autotorch.current_state2": "Current State: Inactive",
   "item.autotorch.enabled": "AutoTorch: Enabled",
-  "item.autotorch.disabled": "AutoTorch: Disabled"
+  "item.autotorch.disabled": "AutoTorch: Disabled",
+  "item.autotorch.directions": "Shift R-Click to activate, R-Click to absorb all torches in inventory, R-Click on block to manually place torch"
 }

@@ -38,6 +38,7 @@ public class AutoTorchItem extends Item {
     public void addInformation(ItemStack stack, @Nullable World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
         super.addInformation(stack, worldIn, tooltip, flagIn);
         TorchUtil.addTorchTag(stack);
+        tooltip.add(new TranslationTextComponent("item.autotorch.directions"));
         String state = EnabledUtil.isEnabled(stack) ? "item.autotorch.current_state1" : "item.autotorch.current_state2";
         tooltip.add(new TranslationTextComponent(state));
         tooltip.add(new StringTextComponent("Stored Torches: " + TorchUtil.getTorches(stack)));
@@ -92,7 +93,7 @@ public class AutoTorchItem extends Item {
         if (!world.isRemote && TorchUtil.getTorches(stack) > 0) {
             switch (context.getFace()) {
                 case UP:
-                    if (world.isAirBlock(pos.up()) && Block.hasSolidSideOnTop(world, pos.up())) {
+                    if (world.isAirBlock(pos.up()) && Block.hasSolidSideOnTop(world, pos)) {
                         world.setBlockState(pos.up(), Blocks.TORCH.getDefaultState(), 1);
                         TorchUtil.subtractTorches(stack, 1);
                     }
