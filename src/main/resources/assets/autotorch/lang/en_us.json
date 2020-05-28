@@ -1,0 +1,8 @@
+{
+  "itemGroup.autotorch": "AutoTorch",
+  "item.autotorch.auto_torch": "Automatic Torch",
+  "item.autotorch.current_state1": "Current State: Active",
+  "item.autotorch.current_state2": "Current State: Inactive",
+  "item.autotorch.enabled": "AutoTorch: Enabled",
+  "item.autotorch.disabled": "AutoTorch: Disabled"
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "TPT",
+    "CCC",
+    "TPT"
+  ],
+  "key": {
+    "C": {
+      "item": "minecraft:coal_block"
+    },
+    "P": {
+      "item": "minecraft:piston"
+    },
+    "T": {
+      "item": "minecraft:torch"
+    }
+  },
+  "result": {
+    "item": "autotorch:auto_torch"
+  }
+}
