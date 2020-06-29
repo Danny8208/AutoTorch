@@ -1,0 +1,27 @@
+modLoader="javafml" #mandatory
+loaderVersion="[32,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+issueTrackerURL="http://github.com/danny8208/autotorch/issues" #optional
+[[mods]] #mandatory
+modId="autotorch" #mandatory
+version="${1.1}" #mandatory
+displayName="AutoTorch" #mandatory
+#updateJSONURL="http://myurl.me/" #optional
+displayURL="http://github.com/Danny8208" #optional
+#logoFile="hungerrings.png" #optional
+#credits="some Calculator and gobber2 code" #optional
+authors="Danny8208" #optional
+description='''
+A mod that adds an item that will automatically light up dark spots below the player.
+'''
+[[dependencies.autotorch]] #optional
+    modId="forge" #mandatory
+    mandatory=true #mandatory
+    versionRange="[32,)" #mandatory
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.autotorch]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.1]"
+    ordering="NONE"
+    side="BOTH"
